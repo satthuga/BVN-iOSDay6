@@ -21,6 +21,7 @@ func addX(_ myArray: inout [Int], X: Int) {
     for i in 0...(myArray.count - 1) {
             if myArray[i] == max {
                 myArray.insert(X, at: i + 1)
+                return
             }
         }
     }
